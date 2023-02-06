@@ -1,7 +1,2 @@
-# wings
-Tester Akun
+Assesment For Wings
 
-Email
-admin@user.com
-Password
-123456
