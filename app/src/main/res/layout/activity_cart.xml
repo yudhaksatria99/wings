@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cart.CartActivity">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:background="#F6CE60"
+        android:layout_width="match_parent"
+        android:weightSum="16"
+        android:orientation="horizontal"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:src="@drawable/baseline_navigate_before_24"
+            android:layout_gravity="start|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:text="Checkout"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        android:layout_marginStart="100dp"
+        android:text="TOTAL :" />
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:layout_marginEnd="150dp"
+        android:maxLength="10"
+        android:text="TOTAL" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_cart"
+        android:layout_below="@+id/txtTotal"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        tools:listitem="@layout/layout_cart_item"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

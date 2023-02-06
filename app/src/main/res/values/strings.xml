@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyAssesment</string>
+    <string name="title_home">Product</string>
+    <string name="title_dashboard">Cart</string>
+</resources>
